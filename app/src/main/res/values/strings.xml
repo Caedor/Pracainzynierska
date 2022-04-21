@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Pracainzynierska</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string-array name="wyszukaj">
+        <item>Data</item>
+        <item>Rodzaj aktywności</item>
+    </string-array>
+
+    <string-array name="data">
+        <item>Rosnąco</item>
+        <item>Malejąco</item>
+    </string-array>
+    <string-array name="rodzajaktyw">
+        <item>Bieganie</item>
+        <item>Marszobieg</item>
+        <item>Rolki</item>
+        <item>Rower</item>
+    </string-array>
+    <string name="title_activity_bluetooth">Bluetooth</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

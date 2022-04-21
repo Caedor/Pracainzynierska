@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/paw-p/Desktop/android kursik/Pracainzynierska/app/src/main/res/layout/activity_bluetooth.xml" value="0.264" />
+        <entry key="..\:/Users/paw-p/Desktop/android kursik/Pracainzynierska/app/src/main/res/layout/activity_bluetooth_connect.xml" value="0.176" />
+        <entry key="..\:/Users/paw-p/Desktop/android kursik/Pracainzynierska/app/src/main/res/layout/activity_bluetoothconnection.xml" value="0.1" />
+        <entry key="..\:/Users/paw-p/Desktop/android kursik/Pracainzynierska/app/src/main/res/layout/activity_chooseactivity.xml" value="0.2056159420289855" />
+        <entry key="..\:/Users/paw-p/Desktop/android kursik/Pracainzynierska/app/src/main/res/layout/activity_historia.xml" value="0.23802083333333332" />
+        <entry key="..\:/Users/paw-p/Desktop/android kursik/Pracainzynierska/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/paw-p/Desktop/android kursik/Pracainzynierska/app/src/main/res/layout/activity_maps.xml" value="0.264" />
+        <entry key="..\:/Users/paw-p/Desktop/android kursik/Pracainzynierska/app/src/main/res/layout/content_bluetooth.xml" value="0.11979166666666667" />
+        <entry key="..\:/Users/paw-p/Desktop/android kursik/Pracainzynierska/app/src/main/res/layout/devicelist.xml" value="0.6" />
+        <entry key="..\:/Users/paw-p/Desktop/android kursik/Pracainzynierska/app/src/main/res/layout/end_activity.xml" value="0.536" />
+        <entry key="..\:/Users/paw-p/Desktop/android kursik/Pracainzynierska/app/src/main/res/layout/fragment_first.xml" value="0.2" />
+        <entry key="..\:/Users/paw-p/Desktop/android kursik/Pracainzynierska/app/src/main/res/layout/fragment_second.xml" value="0.176" />
+        <entry key="..\:/Users/paw-p/Desktop/android kursik/Pracainzynierska/app/src/main/res/layout/recyclerow.xml" value="0.2" />
+        <entry key="..\:/Users/paw-p/Desktop/android kursik/Pracainzynierska/app/src/main/res/layout/responselist.xml" value="0.20969202898550723" />
+        <entry key="..\:/Users/paw-p/Desktop/android kursik/Pracainzynierska/app/src/main/res/layout/wykres_predkosci.xml" value="0.13632246376811594" />
+        <entry key="..\:/Users/paw-p/Desktop/android kursik/Pracainzynierska/app/src/main/res/layout/wykres_terenu.xml" value="0.16799999999999998" />
+        <entry key="..\:/Users/paw-p/Desktop/android kursik/Pracainzynierska/app/src/main/res/menu/menu.xml" value="0.23802083333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

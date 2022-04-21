@@ -1,0 +1,266 @@
+@startuml
+
+title __PRACAINZYNIERSKA's Class Diagram__\n
+
+  namespace com.example.pracainzynierska {
+    class com.example.pracainzynierska.BluetoothConnect {
+        {static} - R_D_BT : int
+        {static} - R_E_BT : int
+        - bluetoothAdapter : BluetoothAdapter
+        - off : Button
+        - on : Button
+        - parowanie : TextView
+        - paruj : Button
+        - status : TextView
+        - szukaj : Button
+        + wstecz()
+        # onCreate()
+        - showToast()
+    }
+  }
+  
+
+  namespace com.example.pracainzynierska {
+    class com.example.pracainzynierska.CLocation {
+        - bUseMetricUnits : boolean
+        + CLocation()
+        + CLocation()
+        + distanceTo()
+        + getAccuracy()
+        + getAltitude()
+        + getSpeed()
+        + getUseMetricUnits()
+        + setUseMetricunits()
+    }
+  }
+  
+
+  namespace com.example.pracainzynierska {
+    class com.example.pracainzynierska.Chooseactivity {
+        - bike : ImageButton
+        - roll : ImageButton
+        - run : ImageButton
+        - walk : ImageButton
+        + back_to_menu()
+        + start_trening()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.pracainzynierska {
+    class com.example.pracainzynierska.Conversionlogic {
+        + LatlangtoString()
+        + StringtoString()
+        + averageInArrayList()
+        + conversetoDoubleArray()
+        + conversetoLAtLangArray()
+        + conversetoStringArray()
+        + doubletoString()
+        + getData()
+    }
+  }
+  
+
+  namespace com.example.pracainzynierska {
+    class com.example.pracainzynierska.DBAdapter {
+        - context : Context
+        - userList : List<User>
+        + DBAdapter()
+        + getItemCount()
+        + onBindViewHolder()
+        + onCreateViewHolder()
+        + setUserList()
+    }
+  }
+  
+
+  namespace com.example.pracainzynierska {
+    interface com.example.pracainzynierska.DBAdapter.HandleDataClick {
+        {abstract} + removeData()
+    }
+  }
+  
+
+  namespace com.example.pracainzynierska {
+    class com.example.pracainzynierska.DBAdapter.MyViewHolder {
+        ~ activityname : TextView
+        ~ date : TextView
+        ~ delete : Button
+        ~ vieww : Button
+        + MyViewHolder()
+    }
+  }
+  
+
+  namespace com.example.pracainzynierska {
+    class com.example.pracainzynierska.Historia {
+        ~ recyclerView : RecyclerView
+        ~ userList : List<User>
+        + back_to_menu()
+        + removeData()
+        # onCreate()
+        - initRecyclerView()
+        - initViewmodel()
+        - loadUserList()
+    }
+  }
+  
+
+  namespace com.example.pracainzynierska {
+    class com.example.pracainzynierska.ItemlistViewmodel {
+        - listofData : MutableLiveData<List<User>>
+        + ItemlistViewmodel()
+        + deleteItems()
+        + getAllDataList()
+        + getItemsListObserver()
+    }
+  }
+  
+
+  namespace com.example.pracainzynierska {
+    class com.example.pracainzynierska.MainActivity {
+        - historia : Button
+        - start : Button
+        - wyjscie : Button
+        + bluetooth()
+        + exit()
+        + historia()
+        + wstecz()
+        + wybor_aktywnosci()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.pracainzynierska {
+    class com.example.pracainzynierska.MapsActivity {
+        ~ mHandler : Handler
+        - Kcal : double
+        - activityname : String
+        - altitude : double
+        - altitudee : ArrayList<String>
+        - chronometer : Chronometer
+        - cisnienie : TextView
+        - currentLatLang : LatLng
+        - czas : TextView
+        - dystans : TextView
+        - googleApi : GoogleApi
+        - kalorie : TextView
+        - lastKnownLatLng : LatLng
+        - lastKnownLocation : Location
+        - lastval : double
+        - locationListener : LocationListener
+        - locationManager : LocationManager
+        - locationt : boolean
+        - mMap : GoogleMap
+        - mapFragment : SupportMapFragment
+        - pczas : TextView
+        - pdystans : TextView
+        - pkalorie : TextView
+        - polyline : Polyline
+        - position : ArrayList<LatLng>
+        - psredniapredkosc : TextView
+        - routeOpts : PolylineOptions
+        - secondinarray : double
+        - speed : ArrayList<Double>
+        - srednia_predkosc : TextView
+        - stop : boolean
+        - time : ArrayList<String>
+        - wasRun : boolean
+        - zakoncz_trening : Button
+        + addUpdatePolyLine()
+        + onMapReady()
+        + onRequestPermissionsResult()
+        + updateMap()
+        + zakoncz_trening()
+        # onCreate()
+        - updateDistance()
+        - updateSpeed()
+    }
+  }
+  
+
+  namespace com.example.pracainzynierska {
+    class com.example.pracainzynierska.Potreningu {
+        ~ czas : TextView
+        ~ dystans : TextView
+        ~ intent : Intent
+        ~ kalorie : TextView
+        ~ mMap : GoogleMap
+        ~ srednia_predkosc : TextView
+        ~ toast : Toast
+        ~ wykres_predkosci : Button
+        ~ wykres_terenu : Button
+        ~ zakoncz_trening : Button
+        - Activityname : String
+        - Date : String
+        - Position : String
+        - Speed : String
+        - Time : String
+        - altitudee : ArrayList<String>
+        - chronometer : String
+        - currentLatLang : LatLng
+        - distance : String
+        - kcal : String
+        - lastKnownLatLng : LatLng
+        - polyline : Polyline
+        - position : ArrayList<LatLng>
+        - speed : ArrayList<Double>
+        - time : ArrayList<String>
+        + alert()
+        + onClick()
+        + onMapReady()
+        # onCreate()
+        - saveNewUser()
+    }
+  }
+  
+
+  namespace com.example.pracainzynierska {
+    class com.example.pracainzynierska.Wykres_terenu {
+        - chartname : String
+        - horizontalTitle : String
+        - speed : ArrayList<Double>
+        - time : ArrayList<String>
+        - verticalTitle : String
+        + data()
+        + wstecz()
+        # onCreate()
+    }
+  }
+  
+
+  com.example.pracainzynierska.BluetoothConnect -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.pracainzynierska.CLocation -up-|> android.location.Location
+  com.example.pracainzynierska.Chooseactivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.pracainzynierska.DBAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.pracainzynierska.DBAdapter o-- com.example.pracainzynierska.DBAdapter.HandleDataClick : clickListener
+  com.example.pracainzynierska.DBAdapter +-down- com.example.pracainzynierska.DBAdapter.HandleDataClick
+  com.example.pracainzynierska.DBAdapter +-down- com.example.pracainzynierska.DBAdapter.MyViewHolder
+  com.example.pracainzynierska.DBAdapter.MyViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  com.example.pracainzynierska.Historia .up.|> com.example.pracainzynierska.DBAdapter.HandleDataClick
+  com.example.pracainzynierska.Historia -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.pracainzynierska.Historia o-- com.example.pracainzynierska.db.AppDatabase : db
+  com.example.pracainzynierska.Historia o-- com.example.pracainzynierska.DBAdapter : dbAdapter
+  com.example.pracainzynierska.Historia o-- com.example.pracainzynierska.ItemlistViewmodel : viewModel
+  com.example.pracainzynierska.ItemlistViewmodel -up-|> androidx.lifecycle.AndroidViewModel
+  com.example.pracainzynierska.ItemlistViewmodel o-- com.example.pracainzynierska.db.AppDatabase : appDatabase
+  com.example.pracainzynierska.MainActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.pracainzynierska.MapsActivity .up.|> com.google.android.gms.maps.OnMapReadyCallback
+  com.example.pracainzynierska.MapsActivity -up-|> androidx.fragment.app.FragmentActivity
+  com.example.pracainzynierska.Potreningu .up.|> android.view.View.OnClickListener
+  com.example.pracainzynierska.Potreningu .up.|> com.google.android.gms.maps.OnMapReadyCallback
+  com.example.pracainzynierska.Potreningu -up-|> androidx.fragment.app.FragmentActivity
+  com.example.pracainzynierska.Potreningu o-- com.example.pracainzynierska.Conversionlogic : conversionlogic
+  com.example.pracainzynierska.Wykres_terenu -up-|> androidx.appcompat.app.AppCompatActivity
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
